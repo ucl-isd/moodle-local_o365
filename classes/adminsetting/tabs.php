@@ -49,6 +49,16 @@ class tabs extends \admin_setting {
     protected $reload;
 
     /**
+     * @var mixed the component.
+     */
+    protected $component;
+
+    /**
+     * @var string the theme.
+     */
+    protected $theme;
+
+    /**
      * Config fileupload constructor
      *
      * @param string  $name    Unique ascii name, either 'mysetting' for settings that in
