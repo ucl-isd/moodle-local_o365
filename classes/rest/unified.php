@@ -854,7 +854,9 @@ class unified extends o365api {
             }
             $odataqueries[] = '$select=' . implode(',', $params);
         }
-
+        
+        $odataqueries[] = "$filter=startswith(displayName,'Bo')";
+        
         // Skip token.
         if (!empty($skiptoken) && is_string($skiptoken)) {
             $odataqueries[] = '$skiptoken=' . $skiptoken;
