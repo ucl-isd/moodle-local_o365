@@ -854,7 +854,7 @@ class main {
                 'type' => 'user',
                 'subtype' => '',
                 'objectid' => $userobjectid,
-                'o365name' => $aaddata['userPrincipalName'],
+                'o365name' => $aaddata['useridentifier'],
                 'moodleid' => $newuser->id,
                 'tenant' => '',
                 'timecreated' => $now,
